@@ -1,0 +1,7 @@
+from vesync.api import VesyncApi
+api = VesyncApi("USERNAME","PASSWORD")
+print(api.get_devices())
+api.turn_on("DEVICE_ID")
+api.turn_off("DEVICE_ID")
+print(api.get_detail("DEVICE_ID"))
+print(api.get_config("DEVICE_ID"))
